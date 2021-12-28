@@ -1,0 +1,44 @@
+Konzept Gungame
+
+
+
+    Spielmodus Funktion:
+        Zu Beginn starten alle Spieler mit einer beliebigen jedoch identischen Waffe. Ab dem Startzeitpunkt wird sich gegenseitig beschossen
+        , jeder Kill verbessert hierbei die Waffe. Sobald ein Spieler die Crowbar bekommt und damit jemanden tötet ist das Spiel vorbei und derjenige siegt.
+        Die gesammten Kills sowie Name, Avatar, Ping sollen dabei in einem Scoreboard festgehalten werden. Ebenfalls gibt jeder Kill Punkte für einen Pointshop
+        in welchem es den Spielern möglich ist Skins freizuschalten um ein gewisses Grindziel zu schaffen.
+
+
+    1. Scoreboard
+
+        - Panels unsichbar machen und .05 Abstand zwischen den Panels lassen
+        - Den Hintergrund transparent machen und bei Möglichkeit LOS logo transparenteinfügen > Aden
+        - Die kills innerhalb des Panels dauerhaft aktualiseren =! Performance 
+    
+    2. Shop
+        - Skins permanent im "Inventar" des Spielers speichern, nach Serverrestart noch verfügbar
+        - Kaufbare Sounds hinzufügen
+
+    3. Gamemode
+        - Bessere Waffen hinzufügen
+                - Balancing anpassen
+        - Nach Abschluss alle Spieler freezen
+        - Für 15 Sekunden Fenster öffnen
+                - Drehender Skin des gewinnenden Spielers. 
+                - Spielername 
+                - GEWONNEN! oben hinschreiben
+                - Den ausgewählten Sound des Spielers abspielen lassen
+
+
+    4. Adminmenu
+        - Am Scoreboard Rand für Teammitglieder bei jedem Spieler Button mit Zahnrad Icon einfügen
+                - Öffnen einens Menüs mit 2 Tabs
+                        1. Tab
+                         - Spieler verwarnen: Ausgewählter Spielername oben sichtbar
+                         - DTextEntry um den Grund einzugeben
+                        2. Tab
+                         - Spieler bannen: Ausgewählter Spierlername oben sichtbar
+                         - DTextEntry für Dauer in Minuten
+                         - DTextEntry für Grund
+
+

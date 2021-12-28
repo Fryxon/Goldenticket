@@ -1,0 +1,82 @@
+Konzept ShopNPC
+
+
+        Funktion:
+        Der ShopNPC soll anklickbar sein und ein XeninUI Window soll geöffnet werden. 
+        Sichbar sollen Skin des NPC´s so wie ein Panel welches als Sprechblase fungiert sein.
+        Ebenfalls wird ein "Next" Button benötigt um das nächste Panel aufzurufen.
+        Innerhalb des ersten Panel soll sich Händler Musti vorstellen sowie den roten Faden des NPC´s andeuten.
+
+
+        Benötigter Code:
+        1. Gesprächsbeginn
+        - Fenster für die Vorstellung mit den gegeben Kritieren
+        - Next button welcher auf die nächste (identische) Seite führt (Unterschied Inhalt des Textes).
+        - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+        - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+        - Innerhalb der Sprechblase mehrzeiligen Text mit einer kurzen Vorstellung
+        
+        2. Gesprächsfortsetzung
+        - Fenster für die Andeutung des Ladens
+        - Next button welcher auf die nächste Seite führt.
+        - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+        - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+        - Innerhalb der Sprechblase mehrzeiligen Text mit einem kurzen Hinweis auf den ShopNPC
+        - Frage nach dem Alter als Abschluss
+
+        3. Alterüberprüfung
+
+        - DTextEntry 
+        - DTextEntry füllen mit Zahlen von 1-99 
+            Option1: Unter 18
+                - Fenster für die Ablehnung des Kunden
+                - Close button welcher das Menü und die Interaktion mit dem NPC beendet.
+                - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+                - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+                - Innerhalb der Sprechblase Abweisung des Spielers da er zu Jung ist.
+                - Frage nach dem Alter als Abschluss
+            Option2: Über 18 oder 18
+                - Fenster für die freundliche Annahme des Kunden
+                - JA Button
+                        Das Gespräch wird beendet und der Shop geht auf
+
+                - NEIN Button
+                        Fenster für die Verabschiedung des Kunden
+                        - Close button welcher das Menü und die Interaktion mit dem NPC beendet.
+                        - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+                        - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+                        - Innerhalb der Sprechblase freundliche Verabschiedung des Kunden
+                        
+                - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+                - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+                - Innerhalb der Sprechblase Abweisung des Spielers da er zu Jung ist.
+                - Frage nach dem Alter als Abschluss
+
+        - ODER 2 Buttons
+
+            "Ich bin bereits über 18"
+                Option1: Über 18 oder 18
+                    - Fenster für die freundliche Annahme des Kunden
+                    - JA Button
+                            Das Gespräch wird beendet und der Shop geht auf
+
+                    - NEIN Button
+                            Fenster für die Verabschiedung des Kunden
+                            - Close button welcher das Menü und die Interaktion mit dem NPC beendet.
+                            - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+                            - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+                            - Innerhalb der Sprechblase freundliche Verabschiedung des Kunden
+                            
+                    - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+                    - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+                    - Innerhalb der Sprechblase freundliche Annahme des Kunden
+                    
+
+            "Ich bin leider noch unter 18"
+                 Option2: Unter 18
+                    - Fenster für die Ablehnung des Kunden
+                    - Close button welcher das Menü und die Interaktion mit dem NPC beendet.
+                    - Den Kopf des Skins anzeigen neben dem Gespräch um ein besseres UX zu bieten.
+                    - Die Buttons sowie die Panel in einer einheitlichen Farbe machen und klar deuten was diese bedeuten (UX und UI des Users)
+                    - Innerhalb der Sprechblase Abweisung des Spielers da er zu Jung ist.
+              
